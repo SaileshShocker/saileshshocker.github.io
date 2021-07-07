@@ -1,0 +1,50 @@
+/* __________________________________________________Hi There!__________________________________________ */
+
+
+@import url('https://fonts.google.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+body
+{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: radial-gradient(#e9e8e8,#ffffff);
+  font-family: 'Poppins',sans-serif;
+
+
+}
+
+h1
+{
+  margin: 0;
+  padding: 0;
+  font-size: 6em;
+  position: absolute;
+  left: 800px; 
+  top: 50px;
+
+  
+  color: rgb(39, 37, 37);
+  /* text-transform: uppercase; */
+  transform: rotate(-20deg) skew(25deg);
+  animation: animate 5s ease-in-out infinite;
+
+}
+
+@keyframes animate 
+{
+  0%,100%
+  {
+    transform: rotate(-20deg) skew(25deg) translate(0,0);
+   text-shadow: -5px 5px 0 rgba(0,0,0,.2);
+  }
+  50%
+  {
+    transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+   text-shadow: -50px 50px 0 rgba(0,0,0,.2); 
+   filter: blur(15px);
+ }
+}

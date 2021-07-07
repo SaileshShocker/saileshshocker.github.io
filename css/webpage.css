@@ -1,0 +1,545 @@
+
+
+/* ___________________________________________________________________________ */
+
+body {
+  background-color:whitesmoke;
+  
+}
+
+form
+{
+    text-align:center;  
+}
+
+*{
+  margin:5px;
+  padding:0;
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+  font-family: "montserrat";
+ 
+}
+
+.left{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+  
+}
+.front,.back{
+  width: 25%;
+  height: 70%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 0%;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+  border-radius: 25px;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+  border-radius: 30px;
+}
+.back{
+  background: #0a4770;
+  transform: perspective(600px) rotateY(180deg);
+  border-radius: 20px;
+  
+}
+.back-content{
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 90px 0;
+}
+.sm{
+  margin: 100px 10;
+  
+}
+.sm a{
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 38px;
+  transition: 0.8s;
+  border-radius: 80%
+}
+.sm a:hover{
+  /* background: #cf0909; */
+  /* background-size: 300px; */
+  color: white;
+  transform: scale(1.5);
+  /* box-shadow: 0 0 10px rgb(76, 0, 255); */
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+a{
+  text-decoration: none;
+}
+
+/* __________________________________________________Hi There!__________________________________________ */
+
+
+@import url('https://fonts.google.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+body
+{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: radial-gradient(#e9e8e8,#495e69);
+  font-family: 'Poppins',sans-serif;
+
+
+}
+
+h6
+{
+  margin: 0;
+  padding: 0;
+  font-size: 6em;
+  position: absolute;
+  left: 900px; 
+  top: 120px;
+
+  
+  color: rgb(39, 37, 37);
+  /* text-transform: uppercase; */
+  transform: rotate(-20deg) skew(25deg);
+  animation: animate 5s ease-in-out infinite;
+
+}
+
+@keyframes animate 
+{
+  0%,100%
+  {
+    transform: rotate(-20deg) skew(25deg) translate(0,0);
+   text-shadow: -5px 5px 0 rgba(0,0,0,.2);
+  }
+  50%
+  {
+    transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+   text-shadow: -50px 50px 0 rgba(0,0,0,.2); 
+   filter: blur(15px);
+ }
+}
+
+/* __________________________________________ */
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  text-align: center;
+  margin-top: 50px;
+}
+.btn{
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1,.btn2{
+  color: #3498db;
+}
+.btn3,.btn4{
+  color: #fff;
+}
+.btn1:hover,.btn2:hover{
+  color: #fff;
+}
+.btn3:hover,.btn4:hover{
+  color: #3498db;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before,.btn3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.btn3::before,.btn4::before{
+  height: 180%;
+}
+.btn1:hover::before,.btn2:hover::before{
+  height: 180%;
+}
+.btn3:hover::before,.btn4:hover::before{
+  height: 0%;
+}
+/* _______________________________________________________Education */
+
+
+
+
+
+
+/* ____________________________________________________________ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+	background-color: #111;
+}
+
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+}
+
+h10 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+
+  .container1 {
+	display: flex;
+	flex-direction: column;
+	margin: 2px;
+	position: absolute;
+	top:1350px;
+	right: 500px;
+
+  }
+  .loader {
+	width: 200px;
+	height: 80px;
+	padding-top: 40vh;
+	margin: auto;
+	display: flex;
+  }
+  .circle {
+	width: 30px;
+	height: 30px;
+	background: rgb(0, 0, 0);
+	border-radius: 50%;
+	animation: jump 1s linear infinite;
+	margin: 0 15px;
+  }
+  .caption {
+	margin: auto;
+	font-family: arial;
+	font-size: 40px;
+	color: rgb(52, 169, 236);
+
+
+  }
+  #b {
+	animation-delay: 0.2s;
+  }
+  #c {
+	animation-delay: 0.4s;
+  }
+  @keyframes jump {
+	0% {
+	  margin-top: 0;
+	}
+	35% {
+	  margin-top: -75px;
+	}
+	70% {
+	  margin-top: 0px;
+	}
+  }
+  
+
+
+
+
+/* __________________________________________________footer____________________________________________? */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+*{
+  font-family: Open Sans;
+  
+} 
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+
+.footer-distributed{
+	background: rgb(0, 0, 0);
+	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	/* margin: auto; */
+	margin-right: 1000px;
+	margin-left: 1px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+/* The company logo */
+
+.footer-distributed h9{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h9 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  	font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center-reach span{
+	display: block;
+	color:  #ffffff;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+	/* transform: scale(1.5); */
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #494d50;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	/* transform: scale(1.5); */
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+}
+
+/* ___________________________________________ */
+
+
+
+
